@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# organizers' own document -- not ours to redistribute publicly
+Airbus-Challenge-Statement-vF (1).pdf
+
+# internal process / audit trail -- kept locally, not on the public repo
+AUDIT.md
+AUDIT-2.md
+AUDIT-3.md
+RESPONSE-TO-AUDIT.md
+RESPONSE-TO-AUDIT-2.md
+RESPONSE-TO-AUDIT-3.md
+STATUS.md
+airbus-tgv-constitution-v2.md
+PHASE1-SUBMISSION.md
+results/writeup_draft.md
+
+.DS_Store
+Thumbs.db

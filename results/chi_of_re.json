@@ -1,0 +1,57 @@
+{
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "python_version": "3.13.0",
+    "machine": "AMD64"
+  },
+  "measured": [
+    {
+      "Re": 10.0,
+      "N": 32,
+      "n_steps": 2173,
+      "T": 10.0,
+      "wall_s": 10.242094799992628,
+      "max_div": 3.3931191190106347e-15,
+      "rel_l2_error": 1.90776658550949e-07,
+      "rank_tol_used": 1.90776658550949e-07,
+      "chi": 5,
+      "dense_bytes": 16384,
+      "quantics_bytes": 4000
+    },
+    {
+      "Re": 100.0,
+      "N": 64,
+      "n_steps": 870,
+      "T": 10.0,
+      "wall_s": 9.144636199998786,
+      "max_div": 6.827871601444713e-15,
+      "rel_l2_error": 0.0031331784654166557,
+      "rank_tol_used": 0.0031331784654166557,
+      "chi": 5,
+      "dense_bytes": 65536,
+      "quantics_bytes": 4800
+    },
+    {
+      "Re": 1000.0,
+      "N": 512,
+      "n_steps": 5563,
+      "T": 10.0,
+      "wall_s": 3753.524609699991,
+      "max_div": 5.88418203051333e-14,
+      "rel_l2_error": 0.0001299672811313513,
+      "rank_tol_used": 0.0001299672811313513,
+      "chi": 5,
+      "dense_bytes": 4194304,
+      "quantics_bytes": 7200
+    }
+  ],
+  "extrapolated_Re_1e6": {
+    "Re": 1000000.0,
+    "N": 524288,
+    "n_bits": 19,
+    "chi_assumed": 5,
+    "dense_bytes": 4398046511104,
+    "quantics_bytes": 15200
+  }
+}
