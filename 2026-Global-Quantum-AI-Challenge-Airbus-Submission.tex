@@ -11,14 +11,14 @@
 \usepackage{fancyhdr}
 \usepackage{caption}
 
-\definecolor{accent}{HTML}{0C7A88}
-\definecolor{warm}{HTML}{B96A1A}
-\definecolor{inksoft}{HTML}{51636A}
+\definecolor{accent}{HTML}{000000}
+\definecolor{warm}{HTML}{000000}
+\definecolor{inksoft}{HTML}{000000}
 
 \titleformat{\section}{\normalfont\Large\bfseries\color{accent}}{\thesection}{0.6em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.6em}{}
 
-\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent, citecolor=accent}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -26,10 +26,10 @@
 \fancyhead[R]{\small\color{inksoft} AiQC \textbar\ Global Quantum + AI Challenge 2026}
 \fancyfoot[C]{\small\color{inksoft} \thepage}
 
-\title{\vspace{-1.5em}\textbf{\color{accent} Fast-Forwarding the Degenerate Case}\\[0.3em]
+\title{\vspace{-1.5em}\textbf{Fast-Forwarding the Degenerate Case}\\[0.3em]
 \large A Verification-First Quantum Algorithm for the\\ 2D Convecting Taylor--Green Vortex}
-\author{Assal Mouadh Abderrahmane \and Boussahi Achraf \and Chekroun Abir \and Lourghi Zakaria \and Menacer Hiba \\[0.3em] \normalsize AiQC --- AI \& Quantum Community}
-\date{\small Submitted to the 2026 Global Quantum + AI Challenge \textbar\ Airbus Track}
+\author{}
+\date{}
 
 \begin{document}
 \makeatletter
@@ -37,20 +37,35 @@
 \begin{@twocolumnfalse}
 \maketitle
 \thispagestyle{fancy}
-\vspace{-2em}
+\vspace{-3em}
 \begin{center}
-\small\color{inksoft}
-\textbf{Track:} Quantum Algorithm, with a compressed Tensor Network solver submitted jointly as a second deliverable\\
+\large Assal Mouadh Abderrahmane, Boussahi Achraf, Chekroun Abir, Lourghi Zakaria, Menacer Hiba
+
+\vspace{0.5em}
+\normalsize AiQC --- AI \& Quantum Community
+
+\vspace{0.5em}
+\small Submitted to the 2026 Global Quantum + AI Challenge \textbar\ Airbus Track
+\end{center}
+\vspace{1em}
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\small
+\textbf{Track:} Quantum Algorithm, with a compressed Tensor Network solver submitted jointly as a second deliverable
+
 \textbf{Code, tests, and full technical report:} \url{https://github.com/mouadhassal/TGX}~\cite{tgx2026}
+\end{minipage}
+\end{center}
+\vspace{1.2em}
+\begin{center}
+\begin{minipage}{0.85\textwidth}
+\textbf{Abstract.} We did not start by building a quantum algorithm for the general two-dimensional Navier--Stokes equations. We started by asking what the challenge's own reference case actually requires, and found that the convecting Taylor--Green vortex, at the challenge's own default parameters, is degenerate on every axis a quantum or quantum-inspired CFD algorithm is normally judged on: its nonlinear term cancels exactly, its time evolution needs no time-marching, its compressed representation has bond dimension five regardless of resolution, its non-unitarity is bounded by a fixed constant, its effective condition number is one on the mode it occupies, and its required output is the cheapest possible readout. We prove each of these six claims independently, symbolically and numerically, then build a six-parameter instrument that turns each degeneracy back on one at a time, so that any advantage claim on this benchmark can be located precisely on the boundary of where it stops holding. On this basis we deliver a fast-forwarding quantum algorithm for the linear, exactly-diagonalizable regime the benchmark occupies, a closed-form non-unitarity dilation achieving an information-theoretic floor exactly, and a compressed quantics/tensor-train solver verified directly at Reynolds number $10^6$ with no dense array ever formed. Every quantitative claim is tagged as measured fact, derived consequence, or stated assumption, and 96 automated tests and three completed rounds of independent audit accompany the full codebase.
+\end{minipage}
 \end{center}
 \vspace{1em}
 \end{@twocolumnfalse}
 ]
 \makeatother
-
-\begin{abstract}
-\noindent We did not start by building a quantum algorithm for the general two-dimensional Navier--Stokes equations. We started by asking what the challenge's own reference case actually requires, and found that the convecting Taylor--Green vortex, at the challenge's own default parameters, is degenerate on every axis a quantum or quantum-inspired CFD algorithm is normally judged on: its nonlinear term cancels exactly, its time evolution needs no time-marching, its compressed representation has bond dimension five regardless of resolution, its non-unitarity is bounded by a fixed constant, its effective condition number is one on the mode it occupies, and its required output is the cheapest possible readout. We prove each of these six claims independently, symbolically and numerically, then build a six-parameter instrument that turns each degeneracy back on one at a time, so that any advantage claim on this benchmark can be located precisely on the boundary of where it stops holding. On this basis we deliver a fast-forwarding quantum algorithm for the linear, exactly-diagonalizable regime the benchmark occupies, a closed-form non-unitarity dilation achieving an information-theoretic floor exactly, and a compressed quantics/tensor-train solver verified directly at Reynolds number $10^6$ with no dense array ever formed. Every quantitative claim is tagged as measured fact, derived consequence, or stated assumption, and 96 automated tests and three completed rounds of independent audit accompany the full codebase.
-\end{abstract}
 
 \section{Problem Relevance and Impact}
 
